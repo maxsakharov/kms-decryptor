@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# InteliJ IDEA
+*.iml
+.idea
+
+# NodeJS
+node_modules/
+coverage/
