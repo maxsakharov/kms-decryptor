@@ -42,8 +42,8 @@ Then you replace sensitive data in config with previously encrypted value and ad
 
 ### How to decrypt using kms-decryptor lib
 
-You AWS resource (AWS lambda, EC2) where your running you NodeJS app should have access to KMS decryption 
-Then using that lib inside your code jus do this:
+You AWS resource (AWS lambda, EC2) should have access to KMS decryption.
+Then using that lib inside your code just need to do next:
  
 ```
 var kmsDecryptor = require('kms-decryptor');
@@ -57,4 +57,4 @@ var decryptedConfig = kmsDecryptor.setup({region: "us-west-2"}).decrypt(config);
 ```
 
 
-Arrays values and nested object properties are also handled
+Array values and nested object properties are also handled
